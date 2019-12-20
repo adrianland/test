@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>recursivo</title>
+</head>
+<body>
+<script>
+        var num = prompt("ingresa un mumero")
+
+        if(num) {
+          console.log("El factorial de "+ num + " es " +factorial(num))
+       }
+
+        function factorial(n){
+            if(n==0) return 1
+            return (n*factorial(n-1))
+        }
+</script>
+</body>
+</html>
